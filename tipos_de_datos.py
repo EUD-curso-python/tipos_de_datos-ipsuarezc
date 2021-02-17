@@ -42,51 +42,53 @@ apellido = apellidos_list[15]
 guardar el resultado en `len_apellido`.
 """
 len_apellido = len(apellido)
-print (len_apellido)
+#print (len_apellido)
 
 """Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
 resultado en `apellido2`.
 """
 apellido2 = apellido.strip()
-print(apellido2)
+#print(apellido2)
 
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
 apellido_es_mayuscula = apellido2.isupper()
-print(apellido_es_mayuscula)
+#print(apellido_es_mayuscula)
 
 
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
 apellido3 = apellido2.upper()
-print(apellido3)
+#print(apellido3)
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
 la variable `apellido2`.
 """
 a_in_apellido = len(apellido2)
-print(a_in_apellido)
+#print(a_in_apellido)
 
 """Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
 termina con el string `"ez"`.
 """
 apellido_end_ez = apellido2.endswith('ez')
-print(apellido_end_ez)
+#print(apellido_end_ez)
 
 """Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
 apellidos_tuple = apellidos_list[49:22:-1]
-print(apellidos_tuple)
+#print(apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
 posición 78 de la lista `apellidos_list`.
 """
 
+apellidos_list2 = apellidos_tuple.strip().upper()
+print(apellidos_list2)
 
 """Eliminar el 4 elemento de la variable `apellidos_list2`.
 """
